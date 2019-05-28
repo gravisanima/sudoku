@@ -5,3 +5,11 @@ button {
     width: 45px;
     vertical-align: top;
 }
+.maindiv{
+    display: none;
+}
+.seconddiv{
+    border: 1px solid black;
+    padding: 20px;
+    background: white;
+}

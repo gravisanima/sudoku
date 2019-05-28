@@ -1,6 +1,7 @@
 let sudokuLine = sudoku.generate('easy');
 console.log(sudokuLine);
 let iterator = 0;
+let id1 = undefined;
 
 for(i = 0; i < 9; i++) {
     let newDiv = document.createElement('div');
@@ -21,8 +22,10 @@ for(i = 0; i < 9; i++) {
         }
         let newElement = document.createElement('button');
         newElement.style = 'display: inline-block;';
+        newElement.id = i*10+a
         if (sudokuLine.charAt(iterator) === '.') {
             newElement.innerHTML = ''
+            newElement.onclick = ()=>{id1 = newElement.id;showDialog();}
         } else {
             newElement.innerHTML = sudokuLine.charAt(iterator)
         }
@@ -35,6 +38,9 @@ for(i = 0; i < 9; i++) {
         }
     }
 }
-bootbox.prompt("Enter a number", function(result){
-    console.log(result);
-    });
+
+let setNumber = () =>{
+    let selectedNumber = document.getElementById('select')
+    console.log(id1)
+    document.getElementById(id1).innerHTML = selectedNumber.selectedIndex+1
+}

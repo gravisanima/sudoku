@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <script src="dialog.js"></script>
 </head>
 <body>
-<div id="main">
-
+<div id="main"></div>
+<div class="maindiv" id="dialog">
+    <div class="seconddiv">
+        <select id="select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <br>
+        <br>
+        <center>
+        <button onclick="hideDialog()">X</button>
+        <button onclick="setNumber()">V</button>
+        </center>
+    </div>
 </div>
 </body>
     <script src="sudoku.js"></script>
-    <script src="bootbox.all.min.js"></script>
-<script src="bootbox.min.js"></script>
-<script src="bootbox.locales.min.js"></script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </html>
