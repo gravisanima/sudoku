@@ -43,4 +43,5 @@ let setNumber = () =>{
     let selectedNumber = document.getElementById('select')
     console.log(id1)
     document.getElementById(id1).innerHTML = selectedNumber.selectedIndex+1
+    hideDialog()
 }
